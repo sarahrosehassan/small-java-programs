@@ -1,0 +1,14 @@
+# Compiled Java artifacts
+*.class
+
+# IDE / OS noise
+.DS_Store
+
+# Local test/input assets not needed for source repo
+warandpeace.txt
+
+# Third-party jars downloaded locally
+lib/*.jar
+
+# Course handouts / problem sheets
+*.pdf
