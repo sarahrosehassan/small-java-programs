@@ -1,0 +1,32 @@
+<svg width="530" height="90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <!-- stdin -->
+  <rect x="10" y="27" width="76" height="36" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="48" y="50" text-anchor="middle" font-family="monospace" font-size="13" fill="#14532d">stdin</text>
+
+  <line x1="86" y1="45" x2="120" y2="45" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="103" y="39" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6b7280">stream</text>
+
+  <!-- Process 1 -->
+  <rect x="120" y="27" width="100" height="36" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="170" y="50" text-anchor="middle" font-family="monospace" font-size="12" fill="#1e3a8a">process 1</text>
+
+  <line x1="220" y1="45" x2="260" y2="45" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="240" y="39" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6b7280">| pipe</text>
+
+  <!-- Process 2 -->
+  <rect x="260" y="27" width="100" height="36" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="310" y="50" text-anchor="middle" font-family="monospace" font-size="12" fill="#1e3a8a">process 2</text>
+
+  <line x1="360" y1="45" x2="400" y2="45" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="380" y="39" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6b7280">stream</text>
+
+  <!-- stdout -->
+  <rect x="400" y="27" width="80" height="36" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="440" y="50" text-anchor="middle" font-family="monospace" font-size="13" fill="#14532d">stdout</text>
+</svg>

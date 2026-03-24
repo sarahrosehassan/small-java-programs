@@ -1,0 +1,54 @@
+<svg width="430" height="160" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="215" y="16" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#374151">Zeckendorf Decomposition: 20 = 13 + 5 + 2</text>
+
+  <!-- Number being decomposed -->
+  <rect x="150" y="24" width="130" height="32" rx="5" fill="#1e3a8a" stroke="#1e40af" stroke-width="1.5"/>
+  <text x="215" y="45" text-anchor="middle" font-family="monospace" font-size="16" fill="white" font-weight="bold">n = 20</text>
+
+  <!-- Down arrow -->
+  <line x1="215" y1="56" x2="215" y2="72" stroke="#6b7280" stroke-width="1.5"/>
+  <polygon points="210,70 220,70 215,78" fill="#6b7280"/>
+
+  <!-- Fibonacci blocks row -->
+  <!-- Fibs shown: 1  2  3  5  8  13 -->
+  <!-- Highlighted: 2 (x=80), 5 (x=190), 13 (x=310) -->
+  <!-- Block width: 50, spacing: 60, y=82, height=36 -->
+
+  <!-- F1=1 (not used) -->
+  <rect x="20" y="82" width="50" height="36" rx="4" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="45" y="97" text-anchor="middle" font-family="monospace" font-size="13" fill="#9ca3af">1</text>
+  <text x="45" y="110" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#9ca3af">F(1)</text>
+
+  <!-- F2=2 (used) -->
+  <rect x="80" y="82" width="50" height="36" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="105" y="97" text-anchor="middle" font-family="monospace" font-size="13" fill="#92400e" font-weight="bold">2</text>
+  <text x="105" y="110" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#92400e">F(3)</text>
+
+  <!-- F3=3 (not used) -->
+  <rect x="140" y="82" width="50" height="36" rx="4" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="165" y="97" text-anchor="middle" font-family="monospace" font-size="13" fill="#9ca3af">3</text>
+  <text x="165" y="110" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#9ca3af">F(4)</text>
+
+  <!-- F4=5 (used) -->
+  <rect x="200" y="82" width="50" height="36" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="225" y="97" text-anchor="middle" font-family="monospace" font-size="13" fill="#92400e" font-weight="bold">5</text>
+  <text x="225" y="110" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#92400e">F(5)</text>
+
+  <!-- F5=8 (not used) -->
+  <rect x="260" y="82" width="50" height="36" rx="4" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="285" y="97" text-anchor="middle" font-family="monospace" font-size="13" fill="#9ca3af">8</text>
+  <text x="285" y="110" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#9ca3af">F(6)</text>
+
+  <!-- F6=13 (used) -->
+  <rect x="320" y="82" width="60" height="36" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="350" y="97" text-anchor="middle" font-family="monospace" font-size="13" fill="#92400e" font-weight="bold">13</text>
+  <text x="350" y="110" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#92400e">F(7)</text>
+
+  <!-- Legend -->
+  <rect x="20" y="134" width="14" height="14" rx="2" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="40" y="145" font-family="sans-serif" font-size="10" fill="#374151">Fibonacci term used in decomposition</text>
+
+  <!-- Fibonacci label -->
+  <text x="215" y="158" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#9ca3af">Greedy algorithm: pick largest Fibonacci number that fits, repeat</text>
+</svg>

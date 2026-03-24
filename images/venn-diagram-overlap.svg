@@ -1,0 +1,31 @@
+<svg width="340" height="180" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="170" y="16" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#374151">Binary Vector Set Overlap</text>
+
+  <!-- Left circle -->
+  <circle cx="120" cy="90" r="65" fill="#bfdbfe" fill-opacity="0.65" stroke="#2563eb" stroke-width="1.8"/>
+
+  <!-- Right circle -->
+  <circle cx="220" cy="90" r="65" fill="#ddd6fe" fill-opacity="0.65" stroke="#7c3aed" stroke-width="1.8"/>
+
+  <!-- Set labels -->
+  <text x="80" y="38" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e3a8a" font-weight="bold">A</text>
+  <text x="260" y="38" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#4c1d95" font-weight="bold">B</text>
+
+  <!-- Region labels -->
+  <!-- n10: left only -->
+  <text x="80" y="87" text-anchor="middle" font-family="monospace" font-size="13" fill="#1e3a8a" font-weight="bold">n10</text>
+  <text x="80" y="102" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#1e40af">A=1, B=0</text>
+
+  <!-- n11: overlap -->
+  <text x="170" y="87" text-anchor="middle" font-family="monospace" font-size="13" fill="#1e293b" font-weight="bold">n11</text>
+  <text x="170" y="102" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#374151">A=1, B=1</text>
+
+  <!-- n01: right only -->
+  <text x="260" y="87" text-anchor="middle" font-family="monospace" font-size="13" fill="#4c1d95" font-weight="bold">n01</text>
+  <text x="260" y="102" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5b21b6">A=0, B=1</text>
+
+  <!-- n00: outside -->
+  <text x="170" y="162" text-anchor="middle" font-family="monospace" font-size="12" fill="#6b7280">n00</text>
+  <text x="170" y="174" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#9ca3af">A=0, B=0 (neither)</text>
+</svg>
