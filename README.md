@@ -39,7 +39,7 @@ The class extends `ArrayList` and overrides `get` and `set`. Before delegating t
 - Every `set(i, value)` call increments `counter[i]`, then stores the new value
 - `getAccessCount(i)` returns the total number of accesses for that index
 
-![Linked list element structure](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/800px-Singly-linked-list.svg.png)
+![Linked list element structure](images/linked-list-structure.svg)
 
 ---
 
@@ -56,7 +56,7 @@ This is an example of the *template method* design pattern: the overall algorith
 - Each line is passed to `processLine(String line)` in order from top to bottom
 - `endFile()` is called once after the last line has been processed
 
-![Unix I/O pipeline](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Pipeline.svg/800px-Pipeline.svg.png)
+![Unix I/O pipeline](images/unix-io-pipeline.svg)
 
 ---
 
@@ -74,7 +74,7 @@ The decision is made by a `BiPredicate<Character, Character>` that receives the 
 - If the predicate returns `true`, the character is forwarded to the wrapped writer
 - The previous-character pointer is updated to the current character regardless of outcome
 
-![Character filter pipeline](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Pipeline.svg/800px-Pipeline.svg.png)
+![Character filter pipeline](images/filter-writer-pipeline.svg)
 
 ---
 
@@ -232,7 +232,7 @@ The sequence begins: 0, 1, 3, 6, 2, 7, 13, 20, 12, 21, 11, …
 - If `back > 0` and `back` has not appeared in the sequence yet, set `a[i] = back`
 - Otherwise set `a[i] = a[i−1] + i` (go forwards)
 
-![Recaman sequence arc diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Recaman%27s_sequence.svg/800px-Recaman%27s_sequence.svg.png)
+![Recaman sequence arc diagram](images/recaman-arc-diagram.svg)
 
 ---
 
@@ -310,7 +310,7 @@ For example: `100 = 89 + 8 + 3`
 - Repeat until `n` reaches zero
 - Return the collected Fibonacci numbers in descending order
 
-![Zeckendorf decomposition](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Zeckendorf_representations.svg/800px-Zeckendorf_representations.svg.png)
+![Zeckendorf decomposition](images/zeckendorf-decomposition.svg)
 
 #### Seven-Zero Numbers
 `sevenZero(n)` finds the smallest positive integer consisting only of the digits `7` and `0` (such as 7, 77, 700, 770, 7700, …) that is exactly divisible by `n`.
@@ -402,7 +402,7 @@ The disagreements (`n10 + n01`) drive dissimilarity. A dissimilarity of 0 means 
 
 All results are returned as exact `Fraction` values.
 
-![Venn diagram of set overlap](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Venn_A_intersect_B.svg/800px-Venn_A_intersect_B.svg.png)
+![Venn diagram of set overlap](images/venn-diagram-overlap.svg)
 
 ---
 
@@ -431,7 +431,7 @@ To multiply two polynomials, multiply every term of the first by every term of t
 To evaluate `P(x)` at a specific value, substitute the value and sum all terms. Horner's method computes this efficiently without repeated exponentiation:
 `P(x) = (…((aₙ·x + aₙ₋₁)·x + aₙ₋₂)·x + … + a₀)`
 
-![Degree-2 polynomial curve](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Polynomialdeg2.svg/800px-Polynomialdeg2.svg.png)
+![Degree-2 polynomial curve](images/polynomial-curve.svg)
 
 ---
 
@@ -455,7 +455,7 @@ Every stream has three parts:
 - **Sort**: alphabetically order results with `sorted()`
 - **Collect**: gather into a `List` with `collect(Collectors.toList())`
 
-![Software pipeline diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Pipeline.svg/800px-Pipeline.svg.png)
+![Software pipeline diagram](images/software-pipeline.svg)
 
 ---
 
@@ -493,7 +493,7 @@ Given a starting date and a target day of the week (e.g., next Friday), this com
 #### Counting Fridays the 13th
 The method counts how many Friday the 13ths occur in a given year by checking every month: construct the 13th of that month and test whether `getDayOfWeek() == FRIDAY`.
 
-![World time zone map](https://upload.wikimedia.org/wikipedia/commons/8/88/Standard_time_zones_of_the_world.png)
+![World time zone map](images/world-timezone-map.svg)
 
 ---
 

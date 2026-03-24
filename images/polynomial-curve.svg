@@ -1,0 +1,85 @@
+<svg width="300" height="220" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="150" y="14" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#374151">Degree-2 Polynomial: y = x&#xB2; - 2x - 3</text>
+
+  <!-- Axes -->
+  <!-- x-axis: y=150, from x=30 to x=270 -->
+  <!-- y-axis: x=90, from y=20 to y=210 -->
+  <!-- origin: (90, 150), scale: x=30px/unit, y=20px/unit -->
+
+  <defs>
+    <marker id="axarr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#374151"/>
+    </marker>
+  </defs>
+
+  <!-- x-axis -->
+  <line x1="28" y1="150" x2="272" y2="150" stroke="#374151" stroke-width="1.2" marker-end="url(#axarr)"/>
+  <!-- y-axis -->
+  <line x1="90" y1="208" x2="90" y2="18" stroke="#374151" stroke-width="1.2" marker-end="url(#axarr)"/>
+
+  <!-- Axis labels -->
+  <text x="268" y="163" font-family="sans-serif" font-size="11" fill="#374151">x</text>
+  <text x="96" y="22" font-family="sans-serif" font-size="11" fill="#374151">y</text>
+
+  <!-- Tick marks and labels -->
+  <!-- x ticks: -1 (x=60), 0 (x=90), 1 (x=120), 2 (x=150), 3 (x=180), 4 (x=210) -->
+  <line x1="60" y1="147" x2="60" y2="153" stroke="#6b7280" stroke-width="1"/>
+  <text x="60" y="163" text-anchor="middle" font-family="monospace" font-size="9" fill="#6b7280">-1</text>
+
+  <line x1="120" y1="147" x2="120" y2="153" stroke="#6b7280" stroke-width="1"/>
+  <text x="120" y="163" text-anchor="middle" font-family="monospace" font-size="9" fill="#6b7280">1</text>
+
+  <line x1="150" y1="147" x2="150" y2="153" stroke="#6b7280" stroke-width="1"/>
+  <text x="150" y="163" text-anchor="middle" font-family="monospace" font-size="9" fill="#6b7280">2</text>
+
+  <line x1="180" y1="147" x2="180" y2="153" stroke="#6b7280" stroke-width="1"/>
+  <text x="180" y="163" text-anchor="middle" font-family="monospace" font-size="9" fill="#6b7280">3</text>
+
+  <!-- y ticks: -4 (y=230), -3 (y=210), 0 (y=150), 2 (y=110) -->
+  <!-- y_screen = 150 - y*20 -->
+  <line x1="87" y1="230" x2="93" y2="230" stroke="#6b7280" stroke-width="1"/>
+  <text x="82" y="233" text-anchor="end" font-family="monospace" font-size="9" fill="#6b7280">-4</text>
+
+  <line x1="87" y1="110" x2="93" y2="110" stroke="#6b7280" stroke-width="1"/>
+  <text x="82" y="113" text-anchor="end" font-family="monospace" font-size="9" fill="#6b7280">2</text>
+
+  <!-- Parabola y = x^2 - 2x - 3 -->
+  <!-- x_screen = 90 + x*30, y_screen = 150 - y*20 -->
+  <!-- Points: x from -1 to 4, step 0.25 -->
+  <!-- x=-1.0: y=1+2-3=0,    screen=(60,150) -->
+  <!-- x=-0.75: y=0.5625+1.5-3=-0.9375, screen=(67.5, 168.75) -->
+  <!-- x=-0.5: y=0.25+1-3=-1.75, screen=(75, 185) -->
+  <!-- x=-0.25: y=0.0625+0.5-3=-2.4375, screen=(82.5, 198.75) -->
+  <!-- x=0: y=-3, screen=(90, 210) -->
+  <!-- x=0.25: y=0.0625-0.5-3=-3.4375, screen=(97.5, 218.75) -->
+  <!-- x=0.5: y=0.25-1-3=-3.75, screen=(105, 225) -->
+  <!-- x=0.75: y=0.5625-1.5-3=-3.9375, screen=(112.5, 228.75) -->
+  <!-- x=1.0: y=1-2-3=-4, screen=(120, 230) -- vertex -->
+  <!-- x=1.25: y=1.5625-2.5-3=-3.9375, screen=(127.5, 228.75) -->
+  <!-- x=1.5: y=2.25-3-3=-3.75, screen=(135, 225) -->
+  <!-- x=1.75: y=3.0625-3.5-3=-3.4375, screen=(142.5, 218.75) -->
+  <!-- x=2.0: y=4-4-3=-3, screen=(150, 210) -->
+  <!-- x=2.25: y=5.0625-4.5-3=-2.4375, screen=(157.5, 198.75) -->
+  <!-- x=2.5: y=6.25-5-3=-1.75, screen=(165, 185) -->
+  <!-- x=2.75: y=7.5625-5.5-3=-0.9375, screen=(172.5, 168.75) -->
+  <!-- x=3.0: y=9-6-3=0, screen=(180, 150) -->
+  <!-- x=3.25: y=10.5625-6.5-3=1.0625, screen=(187.5, 128.75) -->
+  <!-- x=3.5: y=12.25-7-3=2.25, screen=(195, 105) -->
+  <!-- x=3.75: y=14.0625-7.5-3=3.5625, screen=(202.5, 78.75) -->
+  <!-- x=4.0: y=16-8-3=5, screen=(210, 50) -->
+
+  <polyline
+    points="60,150 67.5,168.75 75,185 82.5,198.75 90,210 97.5,218.75 105,225 112.5,228.75 120,230 127.5,228.75 135,225 142.5,218.75 150,210 157.5,198.75 165,185 172.5,168.75 180,150 187.5,128.75 195,105 202.5,78.75 210,50"
+    fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- Root dots -->
+  <circle cx="60" cy="150" r="4" fill="#dc2626"/>
+  <text x="60" y="143" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#dc2626">root</text>
+  <circle cx="180" cy="150" r="4" fill="#dc2626"/>
+  <text x="180" y="143" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#dc2626">root</text>
+
+  <!-- Vertex dot -->
+  <circle cx="120" cy="230" r="4" fill="#16a34a"/>
+  <text x="135" y="234" font-family="sans-serif" font-size="9" fill="#16a34a">vertex (1,-4)</text>
+</svg>

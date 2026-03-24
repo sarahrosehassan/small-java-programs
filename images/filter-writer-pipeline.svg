@@ -1,0 +1,52 @@
+<svg width="500" height="140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2563eb"/>
+    </marker>
+    <marker id="arr-g" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#16a34a"/>
+    </marker>
+    <marker id="arr-r" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <!-- Input chars -->
+  <rect x="10" y="42" width="76" height="36" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="48" y="62" text-anchor="middle" font-family="monospace" font-size="11" fill="#14532d">chars</text>
+  <text x="48" y="72" text-anchor="middle" font-family="monospace" font-size="9" fill="#14532d">in</text>
+
+  <!-- Arrow into predicate -->
+  <line x1="86" y1="60" x2="120" y2="60" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="103" y="54" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6b7280">cur</text>
+
+  <!-- BiPredicate box -->
+  <rect x="120" y="22" width="148" height="76" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="194" y="46" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1e3a8a" font-weight="bold">BiPredicate</text>
+  <text x="194" y="62" text-anchor="middle" font-family="monospace" font-size="10" fill="#1e3a8a">test(prev, cur)</text>
+  <text x="194" y="88" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6b7280">updates prev after each char</text>
+
+  <!-- True path (top right) -->
+  <line x1="268" y1="42" x2="318" y2="28" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arr-g)"/>
+  <text x="296" y="24" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#16a34a">true</text>
+
+  <!-- Write box -->
+  <rect x="318" y="10" width="72" height="32" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="354" y="31" text-anchor="middle" font-family="monospace" font-size="12" fill="#14532d">write</text>
+
+  <!-- False path (bottom right) -->
+  <line x1="268" y1="78" x2="318" y2="92" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-r)"/>
+  <text x="296" y="104" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#dc2626">false</text>
+
+  <!-- Skip box -->
+  <rect x="318" y="78" width="72" height="32" rx="4" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="354" y="99" text-anchor="middle" font-family="monospace" font-size="12" fill="#dc2626">skip</text>
+
+  <!-- Arrow from write to output -->
+  <line x1="390" y1="26" x2="420" y2="56" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arr-g)"/>
+
+  <!-- Writer output -->
+  <rect x="420" y="42" width="68" height="36" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="454" y="62" text-anchor="middle" font-family="monospace" font-size="11" fill="#14532d">Writer</text>
+  <text x="454" y="73" text-anchor="middle" font-family="monospace" font-size="9" fill="#14532d">out</text>
+</svg>
